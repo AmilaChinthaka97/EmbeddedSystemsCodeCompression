@@ -9,13 +9,15 @@ public class SIM {
 
     public static void main(String[] args){
         try {
-            for (String input: args) {
-                if ("1".equals(input)) {
-                    compression();
-                }else if ("2".equals(input)){
-                    decompression();
-                }
-            }
+//            for (String input: args) {
+//                if ("1".equals(input)) {
+//                    compression();
+//                }else if ("2".equals(input)){
+//                    decompression();
+//                }
+//            }
+            compression();
+//            decompression();
         }catch (FileNotFoundException ex){
             System.out.println(ex);
         }
@@ -398,10 +400,14 @@ public class SIM {
             int j = i + 1;
 
             while (true){
-                if (instruction.equals(originalProgram.get(j)) && runLength < 8 && !isPreviousInstructionRLE ){
-                    runLength+=1;
-                    j++;
-                }else {
+                try {
+                    if (instruction.equals(originalProgram.get(j)) && runLength < 8 && !isPreviousInstructionRLE) {
+                        runLength += 1;
+                        j++;
+                    } else {
+                        break;
+                    }
+                }catch (IndexOutOfBoundsException ex){
                     break;
                 }
             }
@@ -439,13 +445,17 @@ public class SIM {
             String bitMask = null;
             String startingLocation = null;
 
-            for (int j = 0; j < xorResult.length() - 3; j++){
+            for (int j = 0; j < xorResult.length() - 3; j++) {
 
-                if (('1' == xorResult.charAt(j)) && xorResult.substring(j+5).chars().filter(ch -> ch == '1').count() == 0){
-                    bitMask = xorResult.substring(j,j+4);
+                if (('1' == xorResult.charAt(j)) && (j + 4 == xorResult.length()) ) {
+                    bitMask = xorResult.substring(j, j + 4);
                     startingLocation = Integer.toBinaryString(j);
                     break;
 
+                }else if (('1' == xorResult.charAt(j)) && xorResult.substring(j+4).chars().filter(ch -> ch == '1').count() == 0){
+                    bitMask = xorResult.substring(j, j + 4);
+                    startingLocation = Integer.toBinaryString(j);
+                    break;
                 }else if ('0' == xorResult.charAt(j)){
                     continue;
 
@@ -835,8 +845,8 @@ public class SIM {
      *<h1>Constant Enum</h1>
      */
     private enum Constants{
-        ORIGINAL("original.txt"),
-        COMPRESSED("compressed.txt"),
+        ORIGINAL("TestResources/compre1.txt"),
+        COMPRESSED("TestResources/cout.txt"),
         COMPRESSED_OUTPUT("cout.txt"),
         DECOMPRESSED_OUTPUT("dout.txt"),
 
