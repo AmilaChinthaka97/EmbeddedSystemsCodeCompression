@@ -9,15 +9,13 @@ public class SIM {
 
     public static void main(String[] args){
         try {
-//            for (String input: args) {
-//                if ("1".equals(input)) {
-//                    compression();
-//                }else if ("2".equals(input)){
-//                    decompression();
-//                }
-//            }
-            compression();
-//            decompression();
+            for (String input: args) {
+                if ("1".equals(input)) {
+                    compression();
+                }else if ("2".equals(input)){
+                    decompression();
+                }
+            }
         }catch (FileNotFoundException ex){
             System.out.println(ex);
         }
@@ -845,8 +843,8 @@ public class SIM {
      *<h1>Constant Enum</h1>
      */
     private enum Constants{
-        ORIGINAL("TestResources/compre1.txt"),
-        COMPRESSED("TestResources/cout.txt"),
+        ORIGINAL("original.txt"),
+        COMPRESSED("compressed.txt"),
         COMPRESSED_OUTPUT("cout.txt"),
         DECOMPRESSED_OUTPUT("dout.txt"),
 
