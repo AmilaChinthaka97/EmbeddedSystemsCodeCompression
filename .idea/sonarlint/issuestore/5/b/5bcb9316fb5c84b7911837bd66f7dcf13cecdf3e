@@ -1,0 +1,42 @@
+
+}
+java:S1488 "_Immediately return this expression instead of assigning it to the temporary variable "flipped".(Š›‡Í8µÆçŸ/
+n	java:S127ƒ"XRefactor the code in order to not assign to this loop counter from within the loop body.(€îÛØ
+c
+java:S2095Õ"EUse try-with-resources or close this "Scanner" in a "finally" clause.(¾§¹8À„µ‘Ÿ/
+o
+java:S2095µ"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(›Õ´Öùÿÿÿÿ8À„µ‘Ÿ/
+?
+java:S1643ó"Use a StringBuilder instead.(Óç·ãıÿÿÿÿ8§¬³‘Ÿ/
+m	java:S127z"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Í‘
+c
+java:S1871~"MThis branch's code block is the same as the block for the branch on line 120.(«£‡¼
+o
+java:S2095®"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(—’¡ıÿÿÿÿ8Æ‚“Ÿ/
+h
+java:S1871{"MThis branch's code block is the same as the block for the branch on line 120.(Û—‹øÿÿÿÿ
+u	java:S127š"XRefactor the code in order to not assign to this loop counter from within the loop body.(•³ÿ˜8À„µ‘Ÿ/
+U
+java:S1135Å"2Complete the task associated to this TODO comment.(‘²Õæüÿÿÿÿ8À„µ‘Ÿ/
+]	java:S125"<This block of commented-out lines of code should be removed.(áğøûıÿÿÿÿ8œ³‰Ÿ/
+m	java:S127n"XRefactor the code in order to not assign to this loop counter from within the loop body.(‹½á
+p
+java:S3776­"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¼ìùŒ8•éŸ/
+m	java:S127t"XRefactor the code in order to not assign to this loop counter from within the loop body.(É…ªÂ
+n	java:S127†"XRefactor the code in order to not assign to this loop counter from within the loop body.(ç…ëÇ
+u	java:S127æ"XRefactor the code in order to not assign to this loop counter from within the loop body.(®´ü©8•éŸ/
+V	java:S106º"9Replace this use of System.out or System.err by a logger.(ö¬8Ç•¡Ÿ/
+9
+java:S3626¿"Remove this redundant jump.(ÉŠ©ƒ8•éŸ/
+v	java:S135·"YReduce the total number of break and continue statements in this loop to use at most one.(“ºÍ»8•éŸ/
+O
+java:S1144"2Remove this unused private "decompression" method.(¢ñô«8î‰Ÿ/
+V	java:S106È"9Replace this use of System.out or System.err by a logger.(ö¬8À„µ‘Ÿ/
+n	java:S127€"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Í‘
+m	java:S127}"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Í‘
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ö¬
+`
+java:S2095H"EUse try-with-resources or close this "Scanner" in a "finally" clause.(×ëöÿÿÿÿÿ
+1
+java:S3626U"Remove this redundant jump.(ÉŠ©ƒ
+r	java:S127w"XRefactor the code in order to not assign to this loop counter from within the loop body.(œò¶ñúÿÿÿÿ

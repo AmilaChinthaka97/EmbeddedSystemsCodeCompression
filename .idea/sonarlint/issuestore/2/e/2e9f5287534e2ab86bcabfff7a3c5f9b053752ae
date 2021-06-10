@@ -1,12 +1,6 @@
 
-\
-java:S1854":Remove this useless assignment to local variable "string".(¾«ÎÀüÿÿÿÿ8Î²¥è/
-]	java:S125"<This block of commented-out lines of code should be removed.(Ì›é´ûÿÿÿÿ8Î²¥è/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(´ÃÍ8éâúŸ/
 M
-java:S1481"+Remove this unused "string" local variable.(¾«ÎÀüÿÿÿÿ8Î²¥è/
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óÎ °ùÿÿÿÿ
-X
-java:S1854";Remove this useless assignment to local variable "string2".(Úßƒ¶8 ûŒë/
-I
-java:S1481",Remove this unused "string2" local variable.(Úßƒ¶8 ûŒë/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ª¤û¢8û¡ë/
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8è»÷Ÿ/
+X	java:S125"<This block of commented-out lines of code should be removed.(³Ÿ¬8¸Ü‘Ÿ/
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óÎ °ùÿÿÿÿ
