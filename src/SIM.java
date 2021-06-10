@@ -9,8 +9,13 @@ public class SIM {
 
     public static void main(String[] args){
         try {
-            compression();
-//            decompression();
+            for (String input: args) {
+                if ("1".equals(input)) {
+                    compression();
+                }else if ("2".equals(input)){
+                    decompression();
+                }
+            }
         }catch (FileNotFoundException ex){
             System.out.println(ex);
         }
@@ -304,9 +309,7 @@ public class SIM {
             for (int i=0; i<decompressedInstructions.size(); i++) {
                 String instruction = decompressedInstructions.get(i);
                 decompressed.write(instruction);
-                if (i != decompressedInstructions.size()-1) {
-                    decompressed.newLine();
-                }
+                decompressed.newLine();
             }
             decompressed.close();
             decompressedTxt.close();
@@ -702,9 +705,7 @@ public class SIM {
 
             for (String dictionaryEntry:dictionary) {
                 compressedFile.write(dictionaryEntry);
-                if (dictionary.indexOf(dictionaryEntry) != dictionary.size()-1){
-                    compressedFile.newLine();
-                }
+                compressedFile.newLine();
             }
             compressedFile.close();
             compressedFileWriter.close();
@@ -834,10 +835,10 @@ public class SIM {
      *<h1>Constant Enum</h1>
      */
     private enum Constants{
-        ORIGINAL("src/original.txt"),//TODO check for original.txt format (without src) to do so move all the files to root (Assignment_5)
-        COMPRESSED("src/compressed.txt"),
-        COMPRESSED_OUTPUT("src/cout.txt"),
-        DECOMPRESSED_OUTPUT("src/dout.txt"),
+        ORIGINAL("original.txt"),
+        COMPRESSED("compressed.txt"),
+        COMPRESSED_OUTPUT("cout.txt"),
+        DECOMPRESSED_OUTPUT("dout.txt"),
 
         SEPARATOR("xxxx"),
 
